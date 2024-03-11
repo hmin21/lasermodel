@@ -49,7 +49,7 @@ For example, "1_2_3.bmp" means the third phase-shifting images of the second pha
 # Help documentation of file "Phase_Retrieval.m"
 Phase_Retrieval.m cam be used to calculate absolute phase, background intensity, and modulation intensity with multi-frequency phase-shifting Patterns.
 
-<img alt="Static Badge" src="https://img.shields.io/badge/Han%20Min-%40Tsinghua-purple"> <img alt="Static Badge" src="https://img.shields.io/badge/Emal%3A-hanm21%40mails.tsinghua.edu.cn-yellow">
+<img alt="Static Badge" src="https://img.shields.io/badge/Han%20Min-%40Tsinghua-purple"> <img alt="Static Badge" src="https://img.shields.io/badge/Email%3A-hanm21%40mails.tsinghua.edu.cn-yellow">
 
 
 
