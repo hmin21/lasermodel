@@ -1,27 +1,38 @@
 # IMPORTANT
-The folder of "Code" provides samples of laser linewidth model calibration and optimal fringe number calibration algorithms.
-The folder of "Data" provides several sets of images of phase-shifted fringe at different distances on a flat board.
-Please place the two folders (i.e., "Code" and "Data") in same root to order not to change the file path in the codes.
+The folder of "Code" provides the codes of model calibration and optimal fringe number calibration.
+The folder of "Data" provides a set of phase-shifted patterns, where a whiteboard at a certain working distance are projected.
+Please place the two folders (i.e., "Code" and "Data") in same root to properly read the pattern.
 
-# Help documentation of file "Exp1_Laser_Model_Calibration.m"
-Exp1_Laser_Model_Calibration.m can be used to perform pixel-by-pixel system calibration of MEMS line laser systems.
-## Data preparation
-Capture the phase shift images at the desired working distance and place it in the "Data" folder. 
-The naming format should be "group_frequency_shift.bmp", and "1_2_3.bmp" means the third phase shift images of the second frequency of the first group.
-## Laser model calibration process
-The 1st section calibrates the model parameters a1-a4 in manner of pixel-wise. To speed up the fitting, a interpolation method is used.
-The 2nd section shows the distribution of model parameters a1-a4 of pixels in a 2D image and thier fitted residuals.
 
-# Help documentation of file "Exp2_Optimal_Algorithm_Calibration.m"
-Exp2_Optimal_Algorithm_Calibration.m estimates the optimal fringe number for a given MEMS-based system.
-## Data preparation
-Capture the phase shift images at several working distances and place it in the "Data" folder.Data for each distance is placed in a separate folder 
-The naming format should be "group_frequency_shift.bmp", and "1_2_3.bmp" means the third phase shift images of the second frequency of the first group.
-## Optimal algorithm calibration process
-The 1st section performs phase resolution of the initial images acquired and fits parameters in the window smoothing model.
-The 2nd section shows the optimal frequency number 2D distribution.
-The 3rd section shows the optimal fringe number at a particular pixel.
+# Help Documentation of File "Window_Smoothing_Theory.m"
+This file can calibrate the window-smoothing model and the optimal fringe number for a given MEMS-based FPP system.
+The calibration is performed in the manner of pixel-wise.
+
+## Data Preparation
+Capture the multi-frequency phase-shifting patterns at the different working distances in the measurement space of FPP.
+Place captured patterns in the "Data\Pattern\" folder. 
+The naming format of the pattern should be "distance_frequency_shift.bmp". 
+For example, "1_2_3.bmp" means the third phase-shifting images of the second phase frequency of the first distance.
+
+## Algorithm Process
+1) Initialization
+		According the Gaussian intensity distribution within linewidth, the model parameters a1-a4 are initialized.
+2) Calculate Decay Factor λ
+		Calculate background intensity Ac. 
+		Calculate Modulation intensity Bc. 
+3) Model Fitting
+		The model parameters  a1-a4  are calibrated in manner of pixel-wise. 
+		To speed up the fitting, a interpolation method is used.
+4) Optimal Fringe Number Search
+		Acoording to the model parameters, search the optimal fringe number in manner of pixel-wise.
+5) Show Model Paramerters a1-a4 (Pixel-wise)
+		Show the distribution of model parameters a1-a4 of pixels in a 2D image 
+		Show the mean fitting residuals
+6) Show Optimal Fringe Number (Pixel-wise)
+		Show the distribution of optimal fringe numbe of pixels in a 2D image 
+
 
 # Help documentation of file "Phase_Retrieval.m"
-Phase_Retrieval.m cam be used to calculate absolute phase, background intensity, and modulation intensity with phase-shift images.
+Phase_Retrieval.m cam be used to calculate absolute phase, background intensity, and modulation intensity with multi-frequency phase-shifting Patterns.
+
 
