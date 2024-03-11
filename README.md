@@ -2,18 +2,24 @@
 
 # IMPORTANT
 The folder of "Code" provides the codes of model calibration and optimal fringe number calibration.
+
 The folder of "Data" provides a set of phase-shifted patterns, where a whiteboard at a certain working distance are projected.
+
 Please place the two folders (i.e., "Code" and "Data") in same root to properly read the pattern.
 
 
 # Help Documentation of File "Window_Smoothing_Theory.m"
 This file can calibrate the window-smoothing model and the optimal fringe number for a given MEMS-based FPP system.
+
 The calibration is performed in the manner of pixel-wise.
 
 ## Data Preparation
 Capture the multi-frequency phase-shifting patterns at the different working distances in the measurement space of FPP.
+
 Place captured patterns in the "Data\Pattern\" folder. 
+
 The naming format of the pattern should be "distance_frequency_shift.bmp". 
+
 For example, "1_2_3.bmp" means the third phase-shifting images of the second phase frequency of the first distance.
 
 ## Algorithm Process
