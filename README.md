@@ -8,7 +8,7 @@ The folder of "Data" provides a set of phase-shifted patterns, where a whiteboar
 Please place the two folders (i.e., "Code" and "Data") in same root to properly read the pattern.
 
 
-# INTRODUCATION OF FILE "Window_Smoothing_Theory.m"
+# INTRODUCATION of FILE "Window_Smoothing_Theory.m"
 This file can calibrate the window-smoothing model and the optimal fringe number for a given MEMS-based FPP system.
 
 The calibration is performed in the manner of pixel-wise.
@@ -46,7 +46,7 @@ For example, "1_2_3.bmp" means the third phase-shifting images of the second pha
 		→ Show the distribution of optimal fringe numbe of pixels in a 2D image 
 
 
-# INTRODUCATION OF FILE "Phase_Retrieval.m"
+# INTRODUCATION of FILE "Phase_Retrieval.m"
 Phase_Retrieval.m cam be used to calculate absolute phase, background intensity, and modulation intensity with multi-frequency phase-shifting Patterns.
 
 <img alt="Static Badge" src="https://img.shields.io/badge/Han%20Min-%40Tsinghua-purple"> <img alt="Static Badge" src="https://img.shields.io/badge/Email%3A-hanm21%40mails.tsinghua.edu.cn-yellow">
