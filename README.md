@@ -1,6 +1,6 @@
 <img alt="Static Badge" src="https://img.shields.io/badge/Window%20Smoothing%20Model-blue"> <img alt="Static Badge" src="https://img.shields.io/badge/Optimal%20Fringe%20Number%20Calibration-red"> <img alt="Static Badge" src="https://img.shields.io/badge/MEMS%20FPP-green">
 
-# Usage
+# IMPORTANT
 The folder of "Code" provides the codes of model calibration and optimal fringe number calibration.
 
 The folder of "Data" provides a set of phase-shifted patterns, where a whiteboard at a certain working distance are projected.
