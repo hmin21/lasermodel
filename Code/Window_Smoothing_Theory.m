@@ -37,7 +37,7 @@ a_0=[a1_0,a2_0,a3_0,a4_0];                       % Initialized Model Parameters
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 for id_distance=1:length(Distance_name)
     Path=[root_path,Distance_name{id_distance}];
-    [~,Ac,Bc] = Phase_Retrieval(Path,f,N);       % 求解背景光强Ac和调制度光强Bc
+    [~,Ac,Bc] = Phase_Retrieval(Path,f,N);       % Calculate Background Ac and Modulation Bc
     Lamda_one=Bc./Ac;
     Lamda(:,:,:,id_distance)=Lamda_one; 
 end
